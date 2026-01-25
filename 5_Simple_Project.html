@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 5: Mini Project - Counter</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #f0f2f5; 
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+        h1 { margin-top: 0; color: #333; }
+        #count-display {
+            font-size: 4rem;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #333;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .decrease { background-color: #ffcccc; color: #cc0000; }
+        .reset { background-color: #e2e8f0; color: #4a5568; }
+        .increase { background-color: #ccffcc; color: #006600; }
+
+        button:hover { opacity: 0.8; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simple Counter</h1>
+        <p>Combine Selecting, Manipulating, and Events</p>
+        
+        <div id="count-display">0</div>
+
+        <div class="btn-group">
+            <button class="decrease">Decrease</button>
+            <button class="reset">Reset</button>
+            <button class="increase">Increase</button>
+        </div>
+    </div>
+
+    <!-- Linked JavaScript File -->
+    <script src="5_Simple_Project.js"></script>
+</body>
+</html>

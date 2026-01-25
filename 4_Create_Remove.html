@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 4: Create & Remove Elements</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 8px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        .delete-btn { color: red; cursor: pointer; font-weight: bold; }
+        input { padding: 5px; }
+        button { padding: 5px 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Part 4: Creating and Removing Elements</h1>
+    <p>We can add new HTML to the page purely with code.</p>
+
+    <input type="text" id="itemInput" placeholder="New Item...">
+    <button id="addBtn">Add to List</button>
+
+    <ul id="itemList">
+        <li>Existing Item 1 <span class="delete-btn">X</span></li>
+    </ul>
+
+    <!-- Linked JavaScript File -->
+    <script src="4_Create_Remove.js"></script>
+
+</body>
+</html>
